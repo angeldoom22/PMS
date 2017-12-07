@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message display</title>
+    <style>
+        body {
+    border:none;
+    padding:none;
+}
+#background {
+    overflow:hidden;
+    float:left;
+    width:700px;
+    background:gray;
+    height:150px;
+    position:absolute; 
+    left:0;
+    top:0;
+}
+h5 {
+    float:left;
+    font-size:100%;
+    margin-left:5px;
+}
+h4 {
+    position:absolute;
+    bottom:-15px;
+    left:34px;
+    font-size:21px;  
+}
+h3 {
+    position:absolute;
+    bottom:-6px;
+    left:180px;
+    font-size:21px;  
+}
+h2 {
+    position:absolute;
+    font-size:15px;
+    text-align:center;
+    bottom:-5px;
+    left:360px;
+}
+h1 {
+    position:absolute;
+    font-size:25px;
+    text-align:center;
+    bottom:-5px;
+    right:140px;
+}
+#textenter {
+    border:none;
+    position:absolute;
+    top:45px;
+    left:5px;
+    width:500px;
+    height:50px;
+    font-size:30px;
+    background:lightgray;
+    padding:3px;
+}
+#sendbutton {
+    position:absolute;
+    top:45px;
+    right:35px;
+    width:120px;
+    height:56px;
+    font-size:21px;
+    font-weight:bold;
+}
+#flashes {
+    position:absolute;
+    bottom:10px;
+    left:110px;
+    height:25px;
+    width:25px;
+}#scrolls {
+    position:absolute;
+    bottom:10px;
+    left:260px;
+    height:25px;
+    width:25px;
+}
+#time {
+    position:absolute;
+    right:187px;
+    bottom:9px;
+    width:43px;
+    font-size:23px;
+    font-weight:bold;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type ="text/javascript" src="message.js"></script>
+        
+</head>
+<body>
+    <div id="background">
+        <form>
+        <h5>Message to Display:</h5>
+        <input id="textenter" type=text placeholder="Enter Message Here">
+        <button type="button" id="sendbutton">Send Message</button>
+        <h4>Flashing</h4>
+        <input id="flashes" type="checkbox">
+        <h3>Scrolling</h3>
+        <input id="scrolls" type="checkbox">
+        <h2>Length of Time<br>To Display</h2>
+        <input id="time" type="number" min="5" max="30" value="5">
+        <h1>Secs</h1>
+        </form>
+    </div>
+    
+    
+  
+   
+    
+   
+</body>
+</html>
